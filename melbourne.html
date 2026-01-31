@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Painters Melbourne | House Painters & Commercial Painting Melbourne VIC</title>
+    <meta name="description" content="Melbourne's trusted painting professionals. Servicing all Melbourne suburbs including Bayside, Eastern Melbourne, Western Melbourne & CBD. Free quotes. 25+ years experience. Licensed & insured painters.">
+    <meta name="keywords" content="painters Melbourne, house painters Melbourne, commercial painters Melbourne, Melbourne painters, interior painters Melbourne, exterior painters Melbourne, Bayside painters, Eastern Melbourne painters, Western Melbourne painters">
+    <link rel="canonical" href="https://paintingnowgroup.com.au/melbourne">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "PaintingNow Group Melbourne",
+      "description": "Professional painting services in Melbourne, VIC",
+      "url": "https://paintingnowgroup.com.au/melbourne",
+      "areaServed": {
+        "@type": "City",
+        "name": "Melbourne",
+        "addressRegion": "VIC",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-37.8136",
+        "longitude": "144.9631"
+      }
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #CF671D;
+            --primary-dark: #a8511a;
+            --text-color: #000000;
+            --bg-color: #ffffff;
+        }
+        
+        body {
+            font-family: 'Figtree', sans-serif;
+            font-weight: 400;
+            color: var(--text-color);
+            background: var(--bg-color);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Figtree', sans-serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        /* Header */
+        header {
+            background: var(--bg-color);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white !important;
+            padding: 12px 30px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(207, 103, 29, 0.3);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://raw.githubusercontent.com/buckleydigital/png-site/refs/heads/main/hero-image-png%20(1).png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 120px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: white;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+        }
+        
+        .hero .cta-button {
+            font-size: 1.2em;
+            padding: 18px 50px;
+            display: inline-block;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Section */
+        section {
+            padding: 80px 20px;
+        }
+        
+        .section-title {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .content-section {
+            background: white;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+        
+        .content-text h3 {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .content-text p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        .suburbs-section {
+            background: #f8f9fa;
+        }
+        
+        .suburbs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .suburb-item {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .suburb-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .services-list {
+            background: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: #f8f9fa;
+            padding: 35px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .service-card h3 {
+            font-size: 1.4em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+        
+        .cta-section .cta-button {
+            background: white;
+            color: var(--primary-color) !important;
+            font-size: 1.2em;
+            padding: 18px 50px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer-logo img {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #888;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                gap: 20px;
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            
+            .cta-button {
+                font-size: 1em;
+                padding: 15px 30px;
+                white-space: nowrap;
+            }
+            
+            .hero .cta-button,
+            .cta-section .cta-button {
+                font-size: 1.1em;
+                padding: 16px 35px;
+                width: auto;
+                display: inline-block;
+            }
+            }
+            
+            .suburbs-grid {
+                grid-template-columns: 1fr;
+            
+            .cta-button {
+                font-size: 1em;
+                padding: 15px 30px;
+                white-space: nowrap;
+            }
+            
+            .hero .cta-button,
+            .cta-section .cta-button {
+                font-size: 1.1em;
+                padding: 16px 35px;
+                width: auto;
+                display: inline-block;
+            }
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://raw.githubusercontent.com/buckleydigital/png-site/refs/heads/main/header-logo-pn.png" alt="PaintingNow Group">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/locations">Locations</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/quote" class="cta-button">Get a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Professional Painters Melbourne</h1>
+        <p>Trusted painting services across all Melbourne suburbs. From the Bayside to Western Melbourne, we connect you with Melbourne's best painters</p>
+        <a href="/quote" class="cta-button">Get Your Free Melbourne Quote</a>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h3>Melbourne's Most Trusted Painting Network</h3>
+                    <p>For over 25 years, PaintingNow Group has been connecting Melbourne homeowners and businesses with qualified, experienced painters. Whether you're in St Kilda, Footscray, or anywhere in between, we have vetted professionals ready to transform your space.</p>
+                    <p>Our Melbourne painters specialize in both residential and commercial projects, from heritage home restorations in Fitzroy to modern apartment renovations in Docklands, and everything in between.</p>
+                    <p>Every painter in our Melbourne network is fully licensed, insured, and has been independently verified to ensure you receive the highest quality service.</p>
+                </div>
+                <div class="content-text">
+                    <h3>Why Choose Our Melbourne Painters?</h3>
+                    <p>Melbourne's climate presents unique challenges for painting projects. Our network of Melbourne painters understands the local conditions, from coastal humidity in the Eastern Melbourne to the western Melbourne heat, ensuring your paint job stands the test of time.</p>
+                    <p>We work with painters who understand Melbourne building regulations, heritage requirements, and strata painting guidelines. Whether it's a terrace in Richmond or a modern home in Toorak, we have the right specialist for your project.</p>
+                    <p>Get a free quote today and discover why Melbourne residents trust PaintingNow Group for all their painting needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="suburbs-section">
+        <div class="container">
+            <h2 class="section-title">Servicing All Melbourne Suburbs</h2>
+            <p class="section-subtitle">Professional painters available throughout Greater Melbourne</p>
+            
+            <div class="suburbs-grid">
+                <div class="suburb-item">Melbourne CBD</div>
+                <div class="suburb-item">Bayside</div>
+                <div class="suburb-item">Eastern Suburbs</div>
+                <div class="suburb-item">Inner West</div>
+                <div class="suburb-item">Western Suburbs</div>
+                <div class="suburb-item">Northern Suburbs</div>
+                <div class="suburb-item">South Melbourne</div>
+                <div class="suburb-item">Brunswick</div>
+                <div class="suburb-item">Fitzroy</div>
+                <div class="suburb-item">St Kilda</div>
+                <div class="suburb-item">Brighton</div>
+                <div class="suburb-item">Richmond</div>
+                <div class="suburb-item">Footscray</div>
+                <div class="suburb-item">Docklands</div>
+                <div class="suburb-item">Glen Waverley</div>
+                <div class="suburb-item">Box Hill</div>
+                <div class="suburb-item">Frankston</div>
+                <div class="suburb-item">Dandenong</div>
+                <div class="suburb-item">Werribee</div>
+                <div class="suburb-item">Geelong</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-list">
+        <div class="container">
+            <h2 class="section-title">Melbourne Painting Services</h2>
+            <p class="section-subtitle">Comprehensive solutions for every Melbourne painting project</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Residential House Painting Melbourne</h3>
+                    <p>Complete interior and exterior house painting services for homes across Melbourne, from federation houses to modern builds</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Commercial Painting Melbourne</h3>
+                    <p>Professional painting for Melbourne offices, retail spaces, warehouses, and industrial facilities</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Apartment & Strata Painting</h3>
+                    <p>Specialist strata painting services for Melbourne apartments and multi-unit developments</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Heritage Home Painting</h3>
+                    <p>Expert restoration and painting of Melbourne's beautiful heritage properties</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Coastal Property Painting</h3>
+                    <p>Specialized painting solutions for Melbourne beachside and waterfront properties</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Colour Consultation</h3>
+                    <p>Professional colour advice tailored to Melbourne's architecture and lifestyle</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Melbourne Painting Project?</h2>
+            <p>Get a free quote from Melbourne's most trusted painters today</p>
+            <a href="/quote" class="cta-button">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="https://raw.githubusercontent.com/buckleydigital/png-site/refs/heads/main/header-logo-pn.png" alt="PaintingNow Group">
+                </div>
+                <p>Your painting project, perfectly matched.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/services#residential">Residential</a></li>
+                    <li><a href="/services#commercial">Commercial</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Locations</h4>
+                <ul>
+                    <li><a href="/melbourne">Melbourne</a></li>
+                    <li><a href="/melbourne">Melbourne</a></li>
+                    <li><a href="/brisbane">Brisbane</a></li>
+                    <li><a href="/gold-coast">Gold Coast</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 PaintingNow Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mainMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
