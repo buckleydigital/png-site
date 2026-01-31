@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Painting Services | Residential & Commercial Painters Australia</title>
+    <meta name="description" content="Comprehensive painting services including residential interior & exterior, commercial painting, colour consultation, roof painting and more. Servicing Sydney, Melbourne, Brisbane & Gold Coast.">
+    <link rel="canonical" href="https://paintingnowgroup.com.au/services">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary-color: #CF671D; --primary-dark: #a8511a; --text-color: #000000; }
+        body { font-family: 'Figtree', sans-serif; font-weight: 400; color: var(--text-color); line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Figtree', sans-serif; font-weight: 600; }
+        header { background: white; padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .header-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo img { height: 50px; }
+        nav ul { list-style: none; display: flex; gap: 40px; align-items: center; }
+        nav a { text-decoration: none; color: var(--text-color); font-weight: 600; transition: color 0.3s; }
+        nav a:hover { color: var(--primary-color); }
+        .cta-button { background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white !important; padding: 12px 30px; border-radius: 8px; }
+        .mobile-menu-toggle { display: none; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://raw.githubusercontent.com/buckleydigital/png-site/refs/heads/main/hero-image-png%20(1).png'); background-size: cover; background-position: center; padding: 120px 20px; text-align: center; color: white; }
+        .hero h1 { font-size: 3.5em; margin-bottom: 20px; color: white; }
+        .hero p { font-size: 1.3em; max-width: 700px; margin: 0 auto; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 80px 20px; }
+        .section-title { font-size: 2.5em; text-align: center; margin-bottom: 60px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+        .service-card { background: white; padding: 40px; border-radius: 12px; border-left: 5px solid var(--primary-color); box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(207,103,29,0.15); }
+        .service-icon { font-size: 3.5em; margin-bottom: 20px; }
+        .service-card h3 { font-size: 1.8em; color: var(--primary-color); margin-bottom: 15px; }
+        .service-card p { color: #666; line-height: 1.8; margin-bottom: 20px; }
+        .service-card ul { margin-left: 20px; color: #666; line-height: 2; }
+        .services-section { background: #f8f9fa; }
+        .cta-section { background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white; text-align: center; }
+        .cta-section h2 { font-size: 2.8em; margin-bottom: 20px; color: white; }
+        .cta-section p { font-size: 1.3em; margin-bottom: 40px; }
+        .cta-section .cta-button { background: white; color: var(--primary-color) !important; font-size: 1.2em; padding: 18px 50px; }
+        footer { background: #1a1a1a; color: white; padding: 60px 20px 30px; }
+        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 40px; }
+        .footer-section h4 { color: var(--primary-color); margin-bottom: 20px; }
+        .footer-section ul { list-style: none; }
+        .footer-section a { color: #ccc; text-decoration: none; }
+        .footer-bottom { text-align: center; padding-top: 30px; border-top: 1px solid #333; color: #888; }
+        @media (max-width: 768px) { .mobile-menu-toggle { display: block; } nav ul { display: none; } .hero h1 { font-size: 2.2em; } .services-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo"><a href="/"><img src="https://raw.githubusercontent.com/buckleydigital/png-site/refs/heads/main/header-logo-pn.png" alt="PaintingNow Group"></a></div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/locations">Locations</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/quote" class="cta-button">Get a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Our Painting Services</h1>
+        <p>Professional painting solutions for every project across Australia</p>
+    </section>
+
+    <section class="services-section" id="residential">
+        <div class="container">
+            <h2 class="section-title">Residential Painting Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Interior House Painting</h3>
+                    <p>Transform your living spaces with professional interior painting services:</p>
+                    <ul>
+                        <li>Walls and ceilings</li>
+                        <li>Feature walls and accent colors</li>
+                        <li>Trim, doors, and skirting boards</li>
+                        <li>Stairwells and hallways</li>
+                        <li>Texture and finish options</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏡</div>
+                    <h3>Exterior House Painting</h3>
+                    <p>Protect and beautify your home's exterior with weather-resistant solutions:</p>
+                    <ul>
+                        <li>Weatherboard and cladding</li>
+                        <li>Brick and render painting</li>
+                        <li>Fascias and gutters</li>
+                        <li>Window frames and trim</li>
+                        <li>Garage doors and fences</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌈</div>
+                    <h3>Colour Consultation</h3>
+                    <p>Expert guidance to choose the perfect colours for your home:</p>
+                    <ul>
+                        <li>Personalized colour schemes</li>
+                        <li>Sample testing on-site</li>
+                        <li>Trend analysis and recommendations</li>
+                        <li>Interior/exterior coordination</li>
+                        <li>Light and space optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏘️</div>
+                    <h3>Deck & Fence Staining</h3>
+                    <p>Protect and enhance outdoor timber structures:</p>
+                    <ul>
+                        <li>Deck staining and sealing</li>
+                        <li>Fence painting and staining</li>
+                        <li>Pergola treatments</li>
+                        <li>Outdoor furniture refinishing</li>
+                        <li>Weatherproofing solutions</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Roof Painting & Restoration</h3>
+                    <p>Extend the life of your roof with professional treatments:</p>
+                    <ul>
+                        <li>Tile roof painting</li>
+                        <li>Metal roof coating</li>
+                        <li>Roof repairs and sealing</li>
+                        <li>Heat-reflective coatings</li>
+                        <li>Gutter painting</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Specialty Finishes</h3>
+                    <p>Unique finishes and decorative techniques:</p>
+                    <ul>
+                        <li>Textured walls and ceilings</li>
+                        <li>Venetian plaster</li>
+                        <li>Metallic and pearl finishes</li>
+                        <li>Wallpaper removal</li>
+                        <li>Custom murals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="commercial" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Commercial Painting Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Office Painting</h3>
+                    <p>Professional painting for corporate and office environments:</p>
+                    <ul>
+                        <li>Minimal business disruption</li>
+                        <li>After-hours scheduling</li>
+                        <li>Brand-specific colours</li>
+                        <li>Reception and common areas</li>
+                        <li>Meeting rooms and offices</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏬</div>
+                    <h3>Retail & Hospitality</h3>
+                    <p>Create inviting spaces for customers:</p>
+                    <ul>
+                        <li>Shopfront painting</li>
+                        <li>Restaurant and cafe interiors</li>
+                        <li>Hotel and accommodation</li>
+                        <li>Display and feature walls</li>
+                        <li>Fast turnaround times</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏭</div>
+                    <h3>Industrial Painting</h3>
+                    <p>Durable solutions for industrial facilities:</p>
+                    <ul>
+                        <li>Warehouse painting</li>
+                        <li>Factory floor coatings</li>
+                        <li>Safety line marking</li>
+                        <li>Industrial equipment</li>
+                        <li>Protective coatings</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏛️</div>
+                    <h3>Strata & Body Corporate</h3>
+                    <p>Specialized services for multi-unit properties:</p>
+                    <ul>
+                        <li>Common area painting</li>
+                        <li>External building facades</li>
+                        <li>Car park line marking</li>
+                        <li>Compliance with regulations</li>
+                        <li>Staged project management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Get a free, no-obligation quote for your painting project</p>
+            <a href="/quote" class="cta-button">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://raw.githubusercontent.com/buckleydigital/png-site/refs/heads/main/header-logo-pn.png" alt="PaintingNow Group" style="height: 60px; margin-bottom: 20px;">
+                <p>Your painting project, perfectly matched.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/services#residential">Residential</a></li>
+                    <li><a href="/services#commercial">Commercial</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Locations</h4>
+                <ul>
+                    <li><a href="/sydney">Sydney</a></li>
+                    <li><a href="/melbourne">Melbourne</a></li>
+                    <li><a href="/brisbane">Brisbane</a></li>
+                    <li><a href="/gold-coast">Gold Coast</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PaintingNow Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('mainMenu').classList.toggle('active'); }
+    </script>
+</body>
+</html>

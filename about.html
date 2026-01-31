@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About PaintingNow Group | Australia's Trusted Painter Network Since 1999</title>
+    <meta name="description" content="Learn about PaintingNow Group - connecting Australians with qualified, vetted painters for over 25 years. Trusted painting network across Sydney, Melbourne, Brisbane & Gold Coast.">
+    <link rel="canonical" href="https://paintingnowgroup.com.au/about">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #CF671D;
+            --primary-dark: #a8511a;
+            --text-color: #000000;
+            --bg-color: #ffffff;
+        }
+        
+        body {
+            font-family: 'Figtree', sans-serif;
+            font-weight: 400;
+            color: var(--text-color);
+            background: var(--bg-color);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Figtree', sans-serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        header {
+            background: var(--bg-color);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white !important;
+            padding: 12px 30px;
+            border-radius: 8px;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://raw.githubusercontent.com/buckleydigital/png-site/refs/heads/main/hero-image-png%20(1).png');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 20px;
+        }
+        
+        .about-section {
+            background: white;
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .about-content h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+        
+        .about-content p {
+            font-size: 1.1em;
+            line-height: 1.9;
+            margin-bottom: 25px;
+            color: #444;
+        }
+        
+        .values-section {
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .value-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .value-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        
+        .value-card h3 {
+            font-size: 1.6em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .value-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+        
+        .cta-section .cta-button {
+            background: white;
+            color: var(--primary-color) !important;
+            font-size: 1.2em;
+            padding: 18px 50px;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #888;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://raw.githubusercontent.com/buckleydigital/png-site/refs/heads/main/header-logo-pn.png" alt="PaintingNow Group">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/locations">Locations</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/quote" class="cta-button">Get a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>About PaintingNow Group</h1>
+        <p>Connecting Australians with trusted painters for over 25 years</p>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Since 1999, PaintingNow Group has been Australia's most trusted painting network, connecting homeowners and businesses with qualified, vetted painting professionals across Sydney, Melbourne, Brisbane, and the Gold Coast.</p>
+                
+                <p>We started with a simple mission: to eliminate the stress and uncertainty of finding a reliable painter. Too many Australians were struggling with unreliable tradespeople, unclear quotes, and disappointing results. We knew there had to be a better way.</p>
+                
+                <p>Over the past 25+ years, we've built relationships with hundreds of professional painters, carefully vetting each one to ensure they meet our high standards of quality, reliability, and professionalism. We've facilitated thousands of successful painting projects, from small residential touch-ups to large commercial renovations.</p>
+                
+                <h2>What Sets Us Apart</h2>
+                <p>Unlike other painting services, we don't employ painters ourselves. Instead, we've created a curated network of independent painting professionals who have proven their expertise through years of exceptional work. This means you get the personalized service of working with an independent tradesperson, backed by the quality assurance of our rigorous vetting process.</p>
+                
+                <p>Every painter in our network is fully licensed, insured, and has been independently verified. We conduct thorough background checks, review past work, and regularly collect feedback from customers to ensure our standards remain consistently high.</p>
+                
+                <p>When you request a quote through PaintingNow Group, we match you with painters who specialize in your specific type of project and location. Whether you need interior painting in a Sydney terrace, exterior work on a Melbourne warehouse, or a complete commercial renovation in Brisbane, we connect you with the right specialist for the job.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Quality First</h3>
+                    <p>We only work with painters who demonstrate exceptional skill, professionalism, and attention to detail</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Trust & Transparency</h3>
+                    <p>Clear communication, honest quotes, and no hidden fees. You always know what to expect</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h3>Reliability</h3>
+                    <p>Our painters show up on time, complete work as promised, and stand behind their workmanship</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">💼</div>
+                    <h3>Professionalism</h3>
+                    <p>Every interaction reflects our commitment to exceptional service and customer satisfaction</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🏆</div>
+                    <h3>Experience</h3>
+                    <p>25+ years of industry knowledge helps us match you with the perfect painter for your project</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🛡️</div>
+                    <h3>Protection</h3>
+                    <p>All painters are fully licensed and insured, giving you complete peace of mind</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Experience the PaintingNow Difference</h2>
+            <p>Join thousands of satisfied customers who trust us with their painting projects</p>
+            <a href="/quote" class="cta-button">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://raw.githubusercontent.com/buckleydigital/png-site/refs/heads/main/header-logo-pn.png" alt="PaintingNow Group" style="height: 60px; margin-bottom: 20px;">
+                <p>Your painting project, perfectly matched.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/services#residential">Residential</a></li>
+                    <li><a href="/services#commercial">Commercial</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Locations</h4>
+                <ul>
+                    <li><a href="/sydney">Sydney</a></li>
+                    <li><a href="/melbourne">Melbourne</a></li>
+                    <li><a href="/brisbane">Brisbane</a></li>
+                    <li><a href="/gold-coast">Gold Coast</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 PaintingNow Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mainMenu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
